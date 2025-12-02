@@ -58,16 +58,16 @@ export default function Header() {
           <a href="/" className="hover:text-green-500 transition">
             Home
           </a>
-          <a href="/services" className="hover:text-green-500 transition">
+          <a href="#services" className="hover:text-green-500 transition">
             Services
           </a>
-          <a href="/about-us" className="hover:text-green-500 transition">
+          <a href="#about-us" className="hover:text-green-500 transition">
             About Us
           </a>
-          <a href="/our-works" className="hover:text-green-500 transition">
+          <a href="#our-works" className="hover:text-green-500 transition">
             Our Work
           </a>
-          <a href="/faqs" className="hover:text-green-500 transition">
+          <a href="#faqs" className="hover:text-green-500 transition">
             FAQ
           </a>
           <a href="/contact" className="hover:text-green-500 transition">
