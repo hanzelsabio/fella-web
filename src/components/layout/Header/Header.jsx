@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import { BsInstagram, BsThreads, BsTwitterX } from "react-icons/bs";
 import { FiFacebook } from "react-icons/fi";
 import { PiTiktokLogo } from "react-icons/pi";
@@ -70,9 +71,9 @@ export default function Header() {
           <a href="#faqs" className="hover:text-green-500 transition">
             FAQ
           </a>
-          <a href="/contact" className="hover:text-green-500 transition">
+          <Link to="/contact" className="hover:text-green-500 transition">
             Contact Us
-          </a>
+          </Link>
           {/* Contact Button */}
           {/* <a
             href="#contact"
