@@ -25,7 +25,7 @@ export default function Header() {
         <div className="hidden lg:flex">
           <a href="/">
             <img
-              src="fella-screen-prints-logo.png"
+              src="/assets/images/fella-screen-prints-logo.png"
               className="w-40"
               alt="Brand Logo"
             />
