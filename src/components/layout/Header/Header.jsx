@@ -112,7 +112,7 @@ export default function Header() {
         <ul className="sidebar_nav_links text-lg flex flex-col space-y-4 text-gray-700 px-8">
           <li>
             <a
-              href="/newarrivals"
+              href="/"
               onClick={() => setSidebarOpen(false)}
               className="block hover:text-green-500 transition"
             >
@@ -121,7 +121,7 @@ export default function Header() {
           </li>
           <li>
             <a
-              href="/newarrivals"
+              href="#services_section"
               onClick={() => setSidebarOpen(false)}
               className="block hover:text-green-500 transition"
             >
@@ -130,7 +130,7 @@ export default function Header() {
           </li>
           <li>
             <a
-              href="/collection"
+              href="#"
               onClick={() => setSidebarOpen(false)}
               className="block hover:text-green-500 transition"
             >
@@ -139,7 +139,7 @@ export default function Header() {
           </li>
           <li>
             <a
-              href="/faqs"
+              href="#"
               onClick={() => setSidebarOpen(false)}
               className="block hover:text-green-500 transition"
             >
@@ -148,7 +148,7 @@ export default function Header() {
           </li>
           <li>
             <a
-              href="/faqs"
+              href="#"
               onClick={() => setSidebarOpen(false)}
               className="block hover:text-green-500 transition"
             >
