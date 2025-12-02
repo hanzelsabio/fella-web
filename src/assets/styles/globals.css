@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+/* Announcement Section */
+
+/* .announcement_section {
+  text-transform: uppercase;
+} */
+
+.header_section,
+.services_section {
+  background-image: url("/src/assets/images/fella-bg.JPG");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.hero_section {
+  background-image: url("/src/assets/images/fella-bg.JPG");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+/* Footer Section */
+
+footer {
+  font-size: 13px;
+}
+
+footer a {
+  color: #df1529;
+}
