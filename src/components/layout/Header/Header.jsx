@@ -156,13 +156,13 @@ export default function Header() {
             </a>
           </li>
           <li>
-            <a
-              href="/contact"
+            <Link
+              to="/contact"
               onClick={() => setSidebarOpen(false)}
               className="block hover:text-green-500 transition"
             >
               Contact Us
-            </a>
+            </Link>
           </li>
         </ul>
 
