@@ -25,7 +25,7 @@ export default function Header() {
         <div className="hidden lg:flex">
           <a href="/">
             <img
-              src="/public/fella-screen-prints-logo.png"
+              src="/fella-screen-prints-logo.png"
               className="w-40"
               alt="Brand Logo"
             />
@@ -46,7 +46,7 @@ export default function Header() {
         <div className="absolute lg:hidden left-1/2 -translate-x-1/2">
           <a href="/">
             <img
-              src="/public/fella-screen-prints-logo.png"
+              src="/fella-screen-prints-logo.png"
               className="w-40"
               alt="Brand Logo"
             />
