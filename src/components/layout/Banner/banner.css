@@ -4,5 +4,6 @@
   background-image: url("/src/assets/images/fella-banner-1.jpg");
   background-position: center;
   background-size: cover;
-  position: relative;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }

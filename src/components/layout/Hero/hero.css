@@ -4,5 +4,6 @@
   background-image: url("/src/assets/images/fella-hero-bg.jpg");
   background-position: center;
   background-size: cover;
-  position: relative;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }

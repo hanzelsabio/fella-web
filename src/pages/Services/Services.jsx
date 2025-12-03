@@ -2,12 +2,13 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { useProducts } from "../../context/ProductContext";
 
+import GetStarted from "../../components/layout/Banner/GetStarted";
 function Services() {
   const { services, loading, error } = useProducts();
 
   if (loading)
     return (
-      <section className="services_section">
+      <section id="services" className="services_section">
         {/* Loading Skeleton Component */}
         <div className="services_content max-w-6xl mx-auto py-10 px-8">
           <div className="services_body grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 animate-pulse">
@@ -25,17 +26,21 @@ function Services() {
   if (error) return <p className="text-center text-red-500 mt-10">{error}</p>;
 
   return (
-    <section className="services_section">
+    <section id="services" className="services_section">
       {/* Packages */}
       {/* <div className="services_content max-w-6xl mx-auto py-10 px-8">
-        <h2 className="services_header text-xl font-medium uppercase mb-6 text-center">
-          What we offer
+        <h2 className="services_header text-xl font-medium uppercase text-center">
+          Service we offer
         </h2>
-        <div className="collection_body grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 min-h-[40vh]"></div>
+        <div className="collection_body grid grid-cols-1 gap-6 min-h-[40vh]">
+          <div className="flex items-center justify-center">
+            <img src="/public/dtf-printing-text.png" className="w-200"></img>
+          </div>
+        </div>
       </div> */}
 
       {/* Services */}
-      <div className="services_content max-w-6xl mx-auto py-10 px-8">
+      <div className="services_content max-w-6xl mx-auto py-30 px-8">
         <h2 className="services_header text-xl font-medium uppercase mb-6 text-center">
           Choose a clothing package
         </h2>
@@ -62,6 +67,7 @@ function Services() {
           ))}
         </div>
       </div>
+      <GetStarted />
     </section>
   );
 }
