@@ -5,7 +5,7 @@ function Hero() {
   return (
     <section
       id="hero_section"
-      className="relative text-white flex items-center justify-center shadow-md py-50 z-20 min-h-[70vh]"
+      className="relative text-white flex items-center justify-center shadow-md py-50 z-20 min-h-[90vh]"
     >
       <div className="absolute inset-0 bg-black/70 z-0"></div>
 
