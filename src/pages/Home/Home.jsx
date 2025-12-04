@@ -12,9 +12,7 @@ function HomePage() {
     <section className="bg-white text-center">
       <Hero />
       <Services />
-      <Banner />
       <About />
-      <Banner />
       <ContactForm />
     </section>
   );

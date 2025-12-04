@@ -56,9 +56,6 @@ export default function Header() {
 
         {/* Right Side (Contact button - Desktop) */}
         <div className="hidden lg:flex items-center space-x-8 text-md text-black">
-          <a href="/" className="hover:text-green-500 transition">
-            Home
-          </a>
           <a href="#services" className="hover:text-green-500 transition">
             Services
           </a>
@@ -67,6 +64,9 @@ export default function Header() {
           </a>
           <a href="#our-works" className="hover:text-green-500 transition">
             Our Work
+          </a>
+          <a href="#reviews" className="hover:text-green-500 transition">
+            Reviews
           </a>
           <a href="#faqs" className="hover:text-green-500 transition">
             FAQ
@@ -112,16 +112,7 @@ export default function Header() {
         <ul className="sidebar_nav_links text-lg flex flex-col space-y-4 text-gray-700 px-8">
           <li>
             <a
-              href="/"
-              onClick={() => setSidebarOpen(false)}
-              className="block hover:text-green-500 transition"
-            >
-              Home
-            </a>
-          </li>
-          <li>
-            <a
-              href="#services_section"
+              href="#services"
               onClick={() => setSidebarOpen(false)}
               className="block hover:text-green-500 transition"
             >
@@ -130,7 +121,7 @@ export default function Header() {
           </li>
           <li>
             <a
-              href="#"
+              href="#about-us"
               onClick={() => setSidebarOpen(false)}
               className="block hover:text-green-500 transition"
             >
@@ -139,7 +130,7 @@ export default function Header() {
           </li>
           <li>
             <a
-              href="#"
+              href="#our-work"
               onClick={() => setSidebarOpen(false)}
               className="block hover:text-green-500 transition"
             >
@@ -148,7 +139,16 @@ export default function Header() {
           </li>
           <li>
             <a
-              href="#"
+              href="#reviews"
+              onClick={() => setSidebarOpen(false)}
+              className="block hover:text-green-500 transition"
+            >
+              Reviews
+            </a>
+          </li>
+          <li>
+            <a
+              href="#faqs"
               onClick={() => setSidebarOpen(false)}
               className="block hover:text-green-500 transition"
             >

@@ -62,18 +62,6 @@ function ContactForm() {
             </div>
             <div>
               <input
-                type="text"
-                name="lastName"
-                value={formData.lastName}
-                onChange={handleChange}
-                required
-                className="w-full border border-gray-500 px-8 py-3.5 focus:outline-none"
-                placeholder="Last Name"
-              />
-            </div>
-
-            <div>
-              <input
                 type="email"
                 name="email"
                 value={formData.email}
@@ -91,7 +79,18 @@ function ContactForm() {
                 onChange={handleChange}
                 required
                 className="w-full border border-gray-500 px-8 py-3.5 focus:outline-none"
-                placeholder="Phone Number"
+                placeholder="Contact Number"
+              />
+            </div>
+            <div>
+              <input
+                type="text"
+                name="company"
+                value={formData.email}
+                onChange={handleChange}
+                required
+                className="w-full border border-gray-500 px-8 py-3.5 focus:outline-none"
+                placeholder="Company (Optional)"
               />
             </div>
           </div>
