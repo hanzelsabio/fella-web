@@ -18,7 +18,7 @@ export default function Header() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
   return (
-    <header className="header_section shadow-md relative z-50">
+    <header className="header_section shadow-md relative top-0 left-0 w-full z-50 bg-white">
       <nav className="header_navigation container mx-auto relative flex items-center justify-between py-12 lg:py-3 px-6">
         {/* Left Side (Desktop Nav + Mobile Menu) */}
 

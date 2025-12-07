@@ -7,6 +7,7 @@ import Header from "./components/layout/Header/Header";
 // import SliderBanner from "./components/layout/SliderBanner/SliderBanner";
 import Footer from "./components/layout/Footer/Footer";
 // import Services from "./pages/Services/Services";
+import BackToTop from "./components/layout/BackToTop/BackToTop";
 
 import { ProductProvider } from "./context/ProductContext";
 import AppRoutes from "./routes/AppRoutes";
@@ -24,6 +25,7 @@ function App() {
         <AppRoutes />
       </main>
       <Footer />
+      <BackToTop />
     </ProductProvider>
   );
 }

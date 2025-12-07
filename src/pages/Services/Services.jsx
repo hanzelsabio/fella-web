@@ -13,7 +13,7 @@ function Services() {
   if (loading)
     return (
       <section id="services" className="services_section">
-        <div className="services_content max-w-6xl mx-auto py-10 px-8">
+        <div className="services_content max-w-6xl mx-auto py-50 px-8">
           <div className="services_body grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 animate-pulse">
             {Array.from({ length: 2 }).map((_, index) => (
               <div key={index} className="p-4 flex flex-col justify-between">
@@ -32,7 +32,7 @@ function Services() {
   return (
     <section id="services" className="services_section">
       {/* Services */}
-      <div className="services_content max-w-6xl mx-auto py-30 px-8">
+      <div className="services_content max-w-6xl mx-auto py-50 px-8">
         <h2 className="services_header text-xl font-medium uppercase mb-6 text-center">
           Choose a clothing package
         </h2>
