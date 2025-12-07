@@ -3,8 +3,8 @@ import "./about.css";
 
 function About() {
   return (
-    <section id="about-us" className="about_section bg-black">
-      <div className="max-w-2xl mx-auto py-30 px-8 md:py-80">
+    <section id="about-us" className="about_section">
+      <div className="max-w-2xl mx-auto py-60 px-8 md:py-80">
         <div className="absolute inset-0 bg-black/70 z-0"></div>
         <div className="relative z-10 text-white text-center">
           <h1 className="text-white text-2xl font-medium mb-10 text-center">

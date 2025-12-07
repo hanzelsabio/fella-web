@@ -1,5 +1,10 @@
 @import "tailwindcss";
 
+/* Smooth scroll */
+:root {
+  scroll-behavior: smooth;
+}
+
 /* Announcement Section */
 
 /* .announcement_section {
