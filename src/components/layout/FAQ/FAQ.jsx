@@ -24,7 +24,7 @@ function FAQ() {
           {faqsData.map((faq, index) => (
             <div
               key={index}
-              className="faq-item bg-gray-200 border border-gray-300 sm:mx-10"
+              className="faq-item border border-gray-400 sm:mx-10"
             >
               <button
                 onClick={() => toggleFAQ(index)}
@@ -38,7 +38,7 @@ function FAQ() {
               </button>
 
               {activeIndex === index && (
-                <div className="faq-answer text-start bg-white text-gray-600 border-t border-gray-300 px-5 py-5 text-base">
+                <div className="faq-answer text-start bg-gray-100 text-gray-600 border-t border-gray-400 px-5 py-5 text-base">
                   {faq.answer.map((line, i) => (
                     <p key={i}>{line}</p>
                   ))}
