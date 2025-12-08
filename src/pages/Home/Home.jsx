@@ -2,7 +2,7 @@ import React from "react";
 
 import Hero from "../../components/layout/Hero/Hero";
 import Banner from "../../components/layout/Banner/Banner";
-// import ContactForm from "../Contact/Contact";
+import ContactForm from "../Contact/Contact";
 import About from "../About/About";
 
 import Services from "../Services/Services";
@@ -20,7 +20,7 @@ function HomePage() {
       <OurWorks />
       <FAQ />
       <Reviews />
-      {/* <ContactForm /> */}
+      <ContactForm />
     </section>
   );
 }

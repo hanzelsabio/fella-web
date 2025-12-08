@@ -39,7 +39,7 @@ function ContactForm() {
 
   return (
     <section
-      id="contact_section"
+      id="contact-section"
       className="contact_section bg-white text-center py-12 min-h-[50vh]"
     >
       <div className="brand-contact max-w-2xl mx-auto p-8">

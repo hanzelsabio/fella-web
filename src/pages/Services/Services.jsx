@@ -57,20 +57,12 @@ function Services() {
               <p className="text-gray-800 font-semibold text-sm mb-2">
                 {product.description}
               </p>
-
-              {/* Numbered list */}
-              {product.body && (
-                <ol className="text-left list-decimal ml-6 mt-2 text-sm text-gray-700">
-                  {product.body.map((item, index) => (
-                    <li key={index}>{item}</li>
-                  ))}
-                </ol>
-              )}
             </button>
           ))}
         </div>
       </div>
 
+      {/* Modal */}
       {selectedService && (
         <div
           className="fixed inset-0 bg-black/50 backdrop-blur-sm flex justify-center items-center z-50"
@@ -87,7 +79,7 @@ function Services() {
                   <img
                     src={selectedService.image}
                     alt={selectedService.title}
-                    className="w-70 h-70 object-contain mb-4 mx-auto"
+                    className="w-120 h-80 object-contain mb-4 mx-auto"
                   />
                 </div>
 
@@ -99,12 +91,26 @@ function Services() {
                   <p className="text-md font-semibold text-gray-900">
                     {selectedService.description}
                   </p>
-                  <p className="text-md text-gray-900">
-                    {selectedService.body}
-                  </p>
+
+                  {/* Numbered List */}
+                  {selectedService.body && (
+                    <ol className="list-decimal list-inside text-left text-gray-700">
+                      {selectedService.body.map((item, index) => (
+                        <li key={index} className="pb-1">
+                          {item}
+                        </li>
+                      ))}
+                    </ol>
+                  )}
                 </div>
               </div>
-              <div className="mt-auto flex justify-end">
+
+              <div className="mt-auto flex justify-end gap-3">
+                <a href="/contact">
+                  <button className="bg-green-600 text-white py-2 px-5 hover:bg-green-700 transition">
+                    Get a Quote
+                  </button>
+                </a>
                 <button
                   onClick={closeModal}
                   className="bg-black text-white py-2 px-5 hover:bg-gray-800 transition"
