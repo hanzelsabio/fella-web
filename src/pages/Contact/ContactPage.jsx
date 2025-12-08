@@ -10,7 +10,7 @@ function ContactPage() {
     <>
       <div
         id="contact_page_section"
-        className="flex justify-center items-center min-h-[40vh]"
+        className="flex justify-center items-center"
       >
         <div className="max-w-7xl mx-auto w-full flex flex-col md:flex-row gap-6 py-10 px-10">
           {/* Socials: takes 1/3 on desktop */}
