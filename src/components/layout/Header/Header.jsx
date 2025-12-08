@@ -26,7 +26,7 @@ export default function Header() {
 
         {/* Center logo */}
         <div className="hidden lg:flex">
-          <a href="/">
+          <a href="#">
             <img
               src="/fella-screen-prints-logo.png"
               className="w-40"
