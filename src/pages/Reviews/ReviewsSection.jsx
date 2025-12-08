@@ -82,19 +82,6 @@ function Reviews() {
               </div>
             ))}
           </div>
-
-          {/* Dots (optional) */}
-          <div className="flex justify-center mt-4 gap-2">
-            {reviews.map((_, index) => (
-              <div
-                key={index}
-                onClick={() => setCurrent(index)}
-                className={`w-2 h-2 rounded-full cursor-pointer transition ${
-                  current === index ? "bg-white" : "bg-gray-500"
-                }`}
-              ></div>
-            ))}
-          </div>
         </div>
 
         {/* ---------- DESKTOP GRID (3 cards) ---------- */}
