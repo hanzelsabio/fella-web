@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 
-import "./ourworks.css";
+import "./OurWorks.css";
 
 function OurWorks() {
   const images = [
