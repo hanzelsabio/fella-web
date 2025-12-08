@@ -37,7 +37,7 @@ export default function BackToTop() {
             p-3 shadow-lg 
             hover:bg-gray-800 
             transition-all duration-300 
-            z-50
+            z-40
           "
         >
           <ArrowUp className="w-5 h-5" />
