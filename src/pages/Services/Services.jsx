@@ -32,7 +32,7 @@ function Services() {
   if (error) return <p className="text-center text-red-500 mt-10">{error}</p>;
 
   return (
-    <section id="services" className="services_section text-center">
+    <section id="services" className="services_section">
       <div className="services_content max-w-7xl mx-auto py-30 md:py-50">
         <h2 className="services_header text-xl font-medium uppercase mb-6 text-center">
           Choose a clothing package
@@ -43,19 +43,21 @@ function Services() {
             <button
               key={product.id}
               onClick={() => openModal(product)}
-              className="p-4 flex flex-col justify-between transition-shadow text-center"
+              className="p-4 flex flex-col justify-between transition-shadow"
             >
               <img
                 src={product.image}
                 alt={product.title}
                 className="w-full h-full object-contain mb-4 mx-auto"
               />
-              <h3 className="text-gray-800 font-bold text-center text-md mb-2">
-                {product.title}
-              </h3>
-              <p className="text-gray-800 font-semibold text-center text-sm mb-2">
-                {product.description}
-              </p>
+              <div className="text-center">
+                <h3 className="text-gray-800 font-bold text-md mb-2">
+                  {product.title}
+                </h3>
+                <p className="text-gray-800 font-semibold text-sm mb-2">
+                  {product.description}
+                </p>
+              </div>
             </button>
           ))}
         </div>
