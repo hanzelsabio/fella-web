@@ -2,12 +2,12 @@ import React, { useState, useEffect, useRef } from "react";
 
 function OurWorks() {
   const images = [
-    "/fella-stan-1.jpg",
-    "/fella-stan-2.jpg",
-    "/fella-stan-3.jpg",
-    "/fella-stan-3.jpg",
-    "/fella-stan-2.jpg",
-    "/fella-stan-1.jpg",
+    "/images/fella-stan-1.jpg",
+    "/images/fella-stan-2.jpg",
+    "/images/fella-stan-3.jpg",
+    "/images/fella-stan-3.jpg",
+    "/images/fella-stan-2.jpg",
+    "/images/fella-stan-1.jpg",
   ];
 
   const [current, setCurrent] = useState(0);
