@@ -12,7 +12,7 @@ function About() {
           </h1>
           <p className="text-gray-300 text-lg font-small text-center">
             Fella Screen Prints is a service that offers a direct-to-film
-            printing. specializing in custom apparel and merchandise for
+            printing. Specializing in custom apparel and merchandise for
             individuals, small brands, events, and organizations. With a focus
             on quality, creativity, and reliability, we help you turn your
             designs into wearable art—whether you’re launching a clothing brand,
