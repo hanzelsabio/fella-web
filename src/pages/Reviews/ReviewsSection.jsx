@@ -1,8 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { FaStar, FaRegStar } from "react-icons/fa";
 
-import "./reviews.css";
-
 function Reviews() {
   const reviews = [
     {
