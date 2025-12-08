@@ -14,6 +14,8 @@ import {
   Twitter,
 } from "lucide-react";
 
+import "./header.css";
+
 export default function Header() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
