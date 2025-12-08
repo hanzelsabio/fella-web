@@ -47,7 +47,7 @@ export default function Header() {
 
         {/* Center logo */}
         <div className="absolute lg:hidden left-1/2 -translate-x-1/2">
-          <a href="/">
+          <a href="#">
             <img
               src="/fella-screen-prints-logo.png"
               className="w-40"
