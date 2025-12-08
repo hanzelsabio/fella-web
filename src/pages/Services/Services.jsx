@@ -48,9 +48,9 @@ function Services() {
               <img
                 src={product.image}
                 alt={product.title}
-                className="w-full h-70 object-contain mb-4 mx-auto"
+                className="w-full h-full object-contain mb-4 mx-auto"
               />
-              <h3 className="text-gray-800 font-bold text-center text-md mb-2 line-clamp-2">
+              <h3 className="text-gray-800 font-bold text-center text-md mb-2">
                 {product.title}
               </h3>
               <p className="text-gray-800 font-semibold text-center text-sm mb-2">
