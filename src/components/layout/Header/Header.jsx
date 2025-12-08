@@ -26,13 +26,13 @@ export default function Header() {
 
         {/* Center logo */}
         <div className="hidden lg:flex">
-          <a href="/">
+          <Link to="/">
             <img
               src="/fella-screen-prints-logo.png"
               className="w-40"
               alt="Brand Logo"
             />
-          </a>
+          </Link>
         </div>
 
         <div className="flex flex-1 items-center gap-6">
@@ -47,13 +47,13 @@ export default function Header() {
 
         {/* Center logo */}
         <div className="absolute lg:hidden left-1/2 -translate-x-1/2">
-          <a href="/">
+          <Link to="/">
             <img
               src="/fella-screen-prints-logo.png"
               className="w-40"
               alt="Brand Logo"
             />
-          </a>
+          </Link>
         </div>
 
         {/* Right Side (Contact button - Desktop) */}
