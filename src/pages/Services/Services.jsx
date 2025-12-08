@@ -30,10 +30,10 @@ function Services() {
   if (error) return <p className="text-center text-red-500 mt-10">{error}</p>;
 
   return (
-    <section id="services" className="services_section">
+    <section id="services" className="services_section text-center">
       {/* Services */}
-      <div className="services_content max-w-6xl mx-auto py-30 md:py-50 px-8">
-        <h2 className="services_header text-xl font-medium uppercase mb-6 text-center">
+      <div className="services_content max-w-7xl mx-auto py-30 md:py-50">
+        <h2 className="services_header text-xl font-medium uppercase mb-6">
           Choose a clothing package
         </h2>
 
@@ -64,12 +64,12 @@ function Services() {
       {/* Modal */}
       {selectedService && (
         <div
-          className="fixed inset-0 bg-black/50 backdrop-blur-sm flex justify-center items-center z-50 px-4"
+          className="fixed inset-0 bg-black/50 backdrop-blur-sm flex justify-center items-center z-50"
           onClick={closeModal}
         >
           <div className="">
             <div
-              className="services_section p-6 max-w-lg mx-auto w-full shadow-xl gap-6 relative"
+              className="services_section p-6 max-w-lg mx-auto w-full shadow-xl relative"
               onClick={(e) => e.stopPropagation()}
             >
               <div className="grid grid-cols-1 md:grid-cols-1 gap-10 items-center">

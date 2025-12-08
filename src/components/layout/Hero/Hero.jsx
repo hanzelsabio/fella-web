@@ -14,7 +14,7 @@ function Hero() {
           Print Your Vision, Wear Your Style
         </h1>
         <p className="text-lg md:text-xl text-gray-400 max-w-2xl mx-auto">
-          Fella Screen Prints delivers high-quality custom screen printing for
+          Fella Screen Prints delivers high-quality direct-to-film printing for
           apparel, merchandise, and brands — crafted with precision and passion.
         </p>
         {/* <div className="flex flex-col sm:flex-row gap-4 justify-center">

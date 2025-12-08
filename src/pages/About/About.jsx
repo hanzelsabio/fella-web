@@ -11,13 +11,13 @@ function About() {
             About Us
           </h1>
           <p className="text-gray-300 text-lg font-small text-center">
-            Fella Screen Prints is a full-service screen printing studio
-            specializing in custom apparel and merchandise for individuals,
-            small brands, events, and organizations. With a focus on quality,
-            creativity, and reliability, we help you turn your designs into
-            wearable art — whether you’re launching a clothing brand, organizing
-            an event, creating uniforms for a team, or simply printing a few
-            shirts for fun.
+            Fella Screen Prints is a service that offers a direct-to-film
+            printing studio. specializing in custom apparel and merchandise for
+            individuals, small brands, events, and organizations. With a focus
+            on quality, creativity, and reliability, we help you turn your
+            designs into wearable art—whether you’re launching a clothing brand,
+            organizing an event, creating uniforms for a team, or simply
+            printing a few shirts for fun.
           </p>
         </div>
       </div>
