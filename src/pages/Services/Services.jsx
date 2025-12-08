@@ -106,8 +106,11 @@ function Services() {
               </div>
 
               <div className="mt-auto flex justify-end gap-3">
-                <a href="/contact">
-                  <button className="bg-green-600 text-white py-2 px-5 hover:bg-green-700 transition">
+                <a href="#contact-section">
+                  <button
+                    onClick={closeModal}
+                    className="bg-green-600 text-white py-2 px-5 hover:bg-green-700 transition"
+                  >
                     Get a Quote
                   </button>
                 </a>
