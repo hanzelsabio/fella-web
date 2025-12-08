@@ -50,14 +50,22 @@ function Services() {
                 alt={product.title}
                 className="w-full h-full object-contain mb-4 mx-auto"
               />
-              <div className="text-center">
-                <h3 className="text-gray-800 font-bold text-md mb-2">
-                  {product.title}
-                </h3>
-                <p className="text-gray-800 font-semibold text-sm mb-2">
-                  {product.description}
-                </p>
-              </div>
+
+              <h3 className="text-gray-800 font-bold text-md mb-2">
+                {product.title}
+              </h3>
+              <p className="text-gray-800 font-semibold text-sm mb-2">
+                {product.description}
+              </p>
+
+              {/* Numbered list */}
+              {product.body && (
+                <ol className="text-left list-decimal ml-6 mt-2 text-sm text-gray-700">
+                  {product.body.map((item, index) => (
+                    <li key={index}>{item}</li>
+                  ))}
+                </ol>
+              )}
             </button>
           ))}
         </div>
@@ -96,7 +104,7 @@ function Services() {
                   </p>
                 </div>
               </div>
-              <div className="mt-auto flex justify-center">
+              <div className="mt-auto flex justify-end">
                 <button
                   onClick={closeModal}
                   className="bg-black text-white py-2 px-5 hover:bg-gray-800 transition"
