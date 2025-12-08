@@ -12,8 +12,8 @@ function FAQ() {
 
   return (
     <section
-      id="faq_section"
-      className="bg-white text-center shadow-md z-15 py-12 min-h-[40vh]"
+      id="faqs"
+      className="faq_section bg-white text-center shadow-md z-15 py-12 min-h-[40vh]"
     >
       <div className="brand-faq max-w-5xl mx-auto p-8">
         <h2 className="faq-title text-black text-2xl font-bold uppercase mb-8">

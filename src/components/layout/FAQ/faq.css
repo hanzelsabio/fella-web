@@ -1,6 +1,6 @@
 @import "tailwindcss";
 
-#faq_section {
+.faq_section {
   background-image: url("/src//assets/images/fella-bg.JPG");
   background-position: center;
   background-size: cover;

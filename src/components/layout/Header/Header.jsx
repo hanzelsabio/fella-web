@@ -130,7 +130,7 @@ export default function Header() {
           </li>
           <li>
             <a
-              href="#our-work"
+              href="#our-works"
               onClick={() => setSidebarOpen(false)}
               className="block hover:text-green-500 transition"
             >
