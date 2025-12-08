@@ -43,7 +43,7 @@ function Services() {
             <button
               key={product.id}
               onClick={() => openModal(product)}
-              className="p-4 flex flex-col justify-between transition-shadow"
+              className="p-4 transition-shadow"
             >
               <img
                 src={product.image}
