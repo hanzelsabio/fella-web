@@ -73,13 +73,13 @@ function Services() {
               className="services_section p-6 max-w-lg mx-auto w-full shadow-xl relative text-center"
               onClick={(e) => e.stopPropagation()}
             >
-              <div className="grid grid-cols-1 md:grid-cols-1 gap-10 items-center">
+              <div className="grid grid-cols-1 md:grid-cols-1 gap-4 items-center">
                 {/* Image */}
                 <div className="flex flex-col items-center">
                   <img
                     src={selectedService.image}
                     alt={selectedService.title}
-                    className="w-120 h-80 object-contain mb-4 mx-auto"
+                    className="w-120 h-80 object-contain mx-auto"
                   />
                 </div>
 

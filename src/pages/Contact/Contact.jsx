@@ -1,5 +1,54 @@
 import React, { useState } from "react";
+import { ChevronDown } from "lucide-react";
+
 import "./contact.css";
+
+function CustomSelect({ value, onChange }) {
+  const [open, setOpen] = useState(false);
+
+  const options = ["Package 1", "Package 2", "Package 3"];
+
+  const handleSelect = (val) => {
+    onChange({ target: { name: "service", value: val } });
+    setOpen(false);
+  };
+
+  return (
+    <div className="relative">
+      {/* Display Box */}
+      <div
+        onClick={() => setOpen(!open)}
+        className="w-full border border-gray-500 px-8 py-3.5 cursor-pointer flex justify-between items-center"
+      >
+        <span className={value ? "text-gray-500" : "text-gray-500"}>
+          {value || "Select a Service"}
+        </span>
+
+        <ChevronDown
+          size={20}
+          className={`text-gray-500 transition-transform ${
+            open ? "rotate-180" : ""
+          }`}
+        />
+      </div>
+
+      {/* Dropdown */}
+      {open && (
+        <div className="absolute left-0 right-0 bg-gray-200 border border-gray-500 mt-1 shadow-lg z-20">
+          {options.map((opt) => (
+            <div
+              key={opt}
+              onClick={() => handleSelect(opt)}
+              className="px-8 py-3.5 hover:bg-gray-100 cursor-pointer"
+            >
+              {opt}
+            </div>
+          ))}
+        </div>
+      )}
+    </div>
+  );
+}
 
 function ContactForm() {
   const [formData, setFormData] = useState({
@@ -7,10 +56,13 @@ function ContactForm() {
     lastName: "",
     email: "",
     number: "",
+    company: "",
+    service: "",
     message: "",
   });
 
   const [submitted, setSubmitted] = useState(false);
+  const [showModal, setShowModal] = useState(false);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -20,21 +72,21 @@ function ContactForm() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // For now, just simulate a successful submission
     console.log("Form submitted:", formData);
     setSubmitted(true);
 
-    // Reset form after a short delay
-    setTimeout(() => {
-      setSubmitted(false);
-      setFormData({
-        firstName: "",
-        lastName: "",
-        email: "",
-        number: "",
-        message: "",
-      });
-    }, 3000);
+    setShowModal(true);
+    setTimeout(() => setShowModal(false), 3000);
+
+    setFormData({
+      firstName: "",
+      lastName: "",
+      email: "",
+      number: "",
+      company: "",
+      service: "",
+      message: "",
+    });
   };
 
   return (
@@ -60,6 +112,19 @@ function ContactForm() {
                 placeholder="First Name"
               />
             </div>
+
+            <div>
+              <input
+                type="text"
+                name="lastName"
+                value={formData.lastName}
+                onChange={handleChange}
+                required
+                className="w-full border border-gray-500 px-8 py-3.5 focus:outline-none"
+                placeholder="Last Name"
+              />
+            </div>
+
             <div>
               <input
                 type="email"
@@ -71,6 +136,7 @@ function ContactForm() {
                 placeholder="Email"
               />
             </div>
+
             <div>
               <input
                 type="tel"
@@ -82,17 +148,19 @@ function ContactForm() {
                 placeholder="Contact Number"
               />
             </div>
+
             <div>
               <input
                 type="text"
                 name="company"
-                value={formData.email}
+                value={formData.company}
                 onChange={handleChange}
-                required
                 className="w-full border border-gray-500 px-8 py-3.5 focus:outline-none"
                 placeholder="Company (Optional)"
               />
             </div>
+
+            <CustomSelect value={formData.service} onChange={handleChange} />
           </div>
 
           <div>
@@ -116,14 +184,38 @@ function ContactForm() {
               Send Message
             </button>
           </div>
-
-          {submitted && (
-            <p className="text-green-600 text-center mt-4">
-              Your message has been sent successfully!
-            </p>
-          )}
         </form>
       </div>
+
+      {showModal && (
+        <div className="fixed inset-0 flex items-center justify-center bg-black/50 z-50 transition-opacity">
+          <div className="bg-white px-8 py-6 shadow-lg max-w-sm text-center relative animate-fadeIn">
+            <button
+              className="absolute top-3 right-3 text-gray-500 text-xl hover:text-black"
+              onClick={() => setShowModal(false)}
+            >
+              ×
+            </button>
+
+            <h2 className="text-xl font-semibold mb-2">Message Sent!</h2>
+            <p className="text-gray-700">
+              Your inquiry has been successfully submitted.
+            </p>
+          </div>
+        </div>
+      )}
+
+      <style>
+        {`
+          @keyframes fadeIn {
+            from { opacity: 0; transform: scale(.95); }
+            to { opacity: 1; transform: scale(1); }
+          }
+          .animate-fadeIn {
+            animation: fadeIn .25s ease-out;
+          }
+        `}
+      </style>
     </section>
   );
 }
