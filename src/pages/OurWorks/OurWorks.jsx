@@ -1,5 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 
+import "./ourworks.css";
+
 function OurWorks() {
   const images = [
     "/gallery/fella-stan-1.jpg",
