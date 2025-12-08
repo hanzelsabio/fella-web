@@ -7,7 +7,9 @@ import About from "../About/About";
 
 import Services from "../Services/Services";
 import OurWorks from "../OurWorks/OurWorks";
-import Reviews from "../Reviews/reviews";
+import Reviews from "../Reviews/ReviewsSection";
+
+import FAQ from "../../components/layout/FAQ/FAQ";
 
 function HomePage() {
   return (
@@ -16,8 +18,9 @@ function HomePage() {
       <Services />
       <About />
       <OurWorks />
-      {/* <ContactForm /> */}
+      <FAQ />
       <Reviews />
+      {/* <ContactForm /> */}
     </section>
   );
 }
