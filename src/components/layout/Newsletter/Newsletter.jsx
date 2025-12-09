@@ -19,9 +19,9 @@ export default function Newsletter() {
   };
 
   return (
-    <section id="newsletter_section" className="py-12 sm:px-12">
+    <section id="newsletter_section" className="bg-black py-12 sm:px-12">
       <div className="newsletter_body max-w-md mx-auto text-center">
-        <h2 className="newsletter_heading md:text-xl font-bold text-gray-800 m-2 uppercase">
+        <h2 className="newsletter_heading md:text-xl font-bold text-white m-2 uppercase">
           Newsletter
         </h2>
         <p className="text-sm mt-2 mb-5">Receive latest updates</p>
