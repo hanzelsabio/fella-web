@@ -5,7 +5,7 @@ import Banner from "../../components/layout/Banner/Banner";
 
 import ContactForm from "./Contact";
 
-function ContactPage() {
+const ContactPage = () => {
   return (
     <>
       <div
@@ -28,6 +28,6 @@ function ContactPage() {
       <ContactForm />
     </>
   );
-}
+};
 
 export default ContactPage;

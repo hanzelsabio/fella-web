@@ -40,6 +40,7 @@ export default function Header() {
           <button
             onClick={() => setSidebarOpen(true)}
             className="flex lg:hidden items-center text-gray-700 hover:text-green-500 transition"
+            style={{ cursor: "pointer" }}
           >
             <Menu className="w-6 h-6" />
           </button>

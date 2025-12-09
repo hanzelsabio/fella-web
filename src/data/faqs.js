@@ -9,7 +9,11 @@ const faqs = [
   },
   {
     question: "What payment methods do you accept?",
-    answer: ["We accept credit/debit cards, GCash, and PayPal."],
+    answer: [
+      "We accept Payments via:",
+      "1. G-CASH",
+      "2. BANK DEPOSIT/ ONLINE FUND TRANSFER",
+    ],
   },
   {
     question: "How long does shipping take?",

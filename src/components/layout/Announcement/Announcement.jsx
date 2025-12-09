@@ -30,6 +30,7 @@ function Announcement() {
         onClick={() => setVisible(false)}
         aria-label="Dismiss announcement"
         className="absolute right-3 top-1/2 -translate-y-1/2 text-white hover:text-gray-300 transition z-50 pointer-events-auto"
+        style={{ cursor: "pointer" }}
       >
         <X className="w-4 h-4" />
       </button>

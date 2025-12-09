@@ -33,7 +33,7 @@ function Services() {
 
   return (
     <section id="services" className="services_section">
-      <div className="services_content max-w-7xl mx-auto py-30 md:py-50">
+      <div className="services_content max-w-7xl mx-auto py-30 md:pb-50">
         <h2 className="services_header text-xl font-medium uppercase mb-6 text-center">
           Choose a clothing package
         </h2>
@@ -70,16 +70,16 @@ function Services() {
         >
           <div className="">
             <div
-              className="services_section p-6 max-w-lg mx-auto w-full shadow-xl relative text-center"
+              className="services_section p-6 max-w-4xl mx-auto w-full shadow-xl relative text-center"
               onClick={(e) => e.stopPropagation()}
             >
-              <div className="grid grid-cols-1 md:grid-cols-1 gap-4 items-center">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 items-center">
                 {/* Image */}
                 <div className="flex flex-col items-center">
                   <img
                     src={selectedService.image}
                     alt={selectedService.title}
-                    className="w-120 h-80 object-contain mx-auto"
+                    className="w-120 h-80 md:h-120 object-contain mx-auto"
                   />
                 </div>
 
@@ -88,7 +88,7 @@ function Services() {
                   <h1 className="text-xl md:text-2xl font-bold text-gray-800">
                     {selectedService.title}
                   </h1>
-                  <p className="text-md font-semibold text-gray-900">
+                  <p className="text-md font-semibold text-gray-900 mb-10">
                     {selectedService.description}
                   </p>
 
@@ -110,6 +110,7 @@ function Services() {
                   <button
                     onClick={closeModal}
                     className="bg-green-600 text-white py-2 px-5 hover:bg-green-700 transition"
+                    style={{ cursor: "pointer" }}
                   >
                     Get a Quote
                   </button>
@@ -117,6 +118,7 @@ function Services() {
                 <button
                   onClick={closeModal}
                   className="bg-black text-white py-2 px-5 hover:bg-gray-800 transition"
+                  style={{ cursor: "pointer" }}
                 >
                   Close
                 </button>
