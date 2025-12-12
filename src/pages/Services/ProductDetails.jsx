@@ -78,7 +78,7 @@ function ProductDetails() {
         }`}
       >
         {/* Product Details */}
-        <section className="max-w-6xl mx-auto py-20 px-20">
+        <section className="max-w-6xl mx-auto py-20 px-8 sm:px-20">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
             {/* LEFT IMAGE */}
             <div className="flex flex-col items-center">
