@@ -25,7 +25,6 @@ function Socials() {
     },
     {
       icon: <BsTelephone className="w-6 h-6" />,
-      link: "",
       title: "Mobile Number",
       text: "+639876543210",
     },
@@ -38,7 +37,7 @@ function Socials() {
       </h1>
 
       {/* 2-column layout */}
-      <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-1 gap-6 py-5">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-1 gap-6 py-5">
         {socials.map((social, index) => (
           <a
             key={index}
@@ -47,7 +46,7 @@ function Socials() {
             rel="noopener noreferrer"
             className="flex items-center justify-start gap-8 md:gap-6 hover:text-green-500 transition"
           >
-            <div className="w-15 h-15 md:w-15 md:h-15 flex items-center justify-center rounded-full border-5 hover:border-white border-gray-300 text-white hover:text-white bg-black hover:bg-gray-800">
+            <div className="w-15 h-15 md:w-15 md:h-15 flex items-center justify-center border-5 hover:border-white border-gray-300 text-white hover:text-white bg-black hover:bg-gray-800">
               {social.icon}
             </div>
             <div>

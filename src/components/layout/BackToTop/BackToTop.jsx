@@ -39,6 +39,7 @@ export default function BackToTop() {
             transition-all duration-300 
             z-40
           "
+          style={{ cursor: "pointer" }}
         >
           <ArrowUp className="w-5 h-5" />
         </button>

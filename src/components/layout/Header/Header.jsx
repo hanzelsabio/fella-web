@@ -68,11 +68,11 @@ export default function Header() {
           <a href="#our-works" className="hover:text-green-500 transition">
             Our Work
           </a>
-          <a href="#reviews" className="hover:text-green-500 transition">
-            Reviews
-          </a>
           <a href="#faqs" className="hover:text-green-500 transition">
             FAQ
+          </a>
+          <a href="#reviews" className="hover:text-green-500 transition">
+            Reviews
           </a>
           <Link to="/contact" className="hover:text-green-500 transition">
             Contact Us
@@ -142,20 +142,20 @@ export default function Header() {
           </li>
           <li>
             <a
-              href="#reviews"
-              onClick={() => setSidebarOpen(false)}
-              className="block hover:text-green-500 transition"
-            >
-              Reviews
-            </a>
-          </li>
-          <li>
-            <a
               href="#faqs"
               onClick={() => setSidebarOpen(false)}
               className="block hover:text-green-500 transition"
             >
               FAQs
+            </a>
+          </li>
+          <li>
+            <a
+              href="#reviews"
+              onClick={() => setSidebarOpen(false)}
+              className="block hover:text-green-500 transition"
+            >
+              Reviews
             </a>
           </li>
           <li>

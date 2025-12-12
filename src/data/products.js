@@ -2,10 +2,10 @@ import BlackLogoShirt from "../assets/images/Black-Logo-Shirt.png";
 import WhiteLogoShirt from "../assets/images/White-Logo-Shirt.png";
 import NoImageFound from "../assets/images/no-image-found.png";
 
-const servicesData = [
+const productsData = [
   {
     id: 1,
-    title: "Clothing Line Package",
+    title: "Pro Club",
     heading: "Lorem Ipsum",
     body: [
       "Your Own Design!",
@@ -15,12 +15,27 @@ const servicesData = [
       "Stickers - 3 inch width proportion",
       "Frosted Ziplock Shirt Packaging",
     ],
-    description: "10 or 20 PCS Clothing Line Inclusions",
+    description: "",
     image: BlackLogoShirt,
   },
   {
     id: 2,
-    title: "No Minimumn Order",
+    title: "Box Tee",
+    heading: "Lorem Ipsum",
+    body: [
+      "Your Own Design!",
+      "Main Print - Pocket Size Front Print + A3 Size Back Print or A4 Size Front and Back Print.",
+      "Sleeve Tag & Hern Tag - 1x2 Inch",
+      "Neck Tag (Inner Print) - 1.5x2.5 (3 inch width proportion)",
+      "Stickers - 3 inch width proportion",
+      "Frosted Ziplock Shirt Packaging",
+    ],
+    description: "",
+    image: WhiteLogoShirt,
+  },
+  {
+    id: 3,
+    title: "Relaxed Tee",
     heading: "Lorem Ipsum",
     body: [
       "Print and Shirt Only",
@@ -33,4 +48,4 @@ const servicesData = [
   },
 ];
 
-export default servicesData;
+export default productsData;

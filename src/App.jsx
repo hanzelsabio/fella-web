@@ -13,13 +13,15 @@ import ScrollToTop from "./components/helper/ScrollToTop";
 import { ProductProvider } from "./context/ProductContext";
 import AppRoutes from "./routes/AppRoutes";
 
+import "./assets/styles/globals.css";
+
 function App() {
   return (
     <ProductProvider>
       <ScrollToTop />
       <Announcement />
       <Header />
-      <main className="bg-black">
+      <main className="main_background">
         {/*
         <SliderBanner />
         <Services />

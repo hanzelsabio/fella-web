@@ -1,16 +1,19 @@
 import React, { createContext, useContext, useState, useEffect } from "react";
-import servicesData from "../data/services"; // <-- import your services data
+import productsData from "../data/products";
+import servicesData from "../data/services";
 
 const ProductContext = createContext();
 
 export const ProductProvider = ({ children }) => {
-  const [services, setServices] = useState([]); // <-- ADD THIS
+  const [products, setProducts] = useState([]);
+  const [services, setServices] = useState([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
 
   useEffect(() => {
     try {
-      setServices(servicesData); // <-- ADD THIS
+      setProducts(productsData);
+      setServices(servicesData);
       setLoading(false);
     } catch (err) {
       setError("Failed to load data");
@@ -21,7 +24,8 @@ export const ProductProvider = ({ children }) => {
   return (
     <ProductContext.Provider
       value={{
-        services, // <-- MAKE IT AVAILABLE
+        products,
+        services,
         loading,
         error,
       }}

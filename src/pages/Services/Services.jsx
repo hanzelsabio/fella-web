@@ -29,7 +29,12 @@ function Services() {
       </section>
     );
 
-  if (error) return <p className="text-center text-red-500 mt-10">{error}</p>;
+  if (error)
+    return (
+      <div className="collection_content max-w-6xl mx-auto py-80 px-8">
+        <p className="text-center text-red-500">{error}</p>
+      </div>
+    );
 
   return (
     <section id="services" className="services_section">
@@ -112,7 +117,16 @@ function Services() {
                     className="bg-green-600 text-white py-2 px-5 hover:bg-green-700 transition"
                     style={{ cursor: "pointer" }}
                   >
-                    Get a Quote
+                    Clothing Line
+                  </button>
+                </a>
+                <a href="#contact-section">
+                  <button
+                    onClick={closeModal}
+                    className="bg-green-600 text-white py-2 px-5 hover:bg-green-700 transition"
+                    style={{ cursor: "pointer" }}
+                  >
+                    No Minimum
                   </button>
                 </a>
                 <button

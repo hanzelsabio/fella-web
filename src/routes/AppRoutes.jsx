@@ -4,6 +4,7 @@ import HomePage from "../pages/HomePage/HomePage";
 import Services from "../pages/Services/Services";
 import FAQ from "../components/layout/FAQ/FAQ";
 import ContactPage from "../pages/Contact/ContactPage";
+import ProductDetails from "../pages/Services/ProductDetails";
 
 export default function AppRoutes() {
   return (
@@ -11,6 +12,7 @@ export default function AppRoutes() {
       <Route path="/" element={<HomePage />} />
       <Route path="/faq" element={<FAQ />} />
       <Route path="/services" element={<Services />} />
+      <Route path="/product/:id" element={<ProductDetails />} />
       <Route path="/contact" element={<ContactPage />} />
     </Routes>
   );
