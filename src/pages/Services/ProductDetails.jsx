@@ -113,6 +113,7 @@ function ProductDetails() {
                     clothingLineService && openModal(clothingLineService)
                   }
                   className="w-100 bg-green-600 text-white py-2.5 px-5 hover:bg-green-700 transition"
+                  style={{ cursor: "pointer" }}
                 >
                   Clothing Line
                 </button>
@@ -122,6 +123,7 @@ function ProductDetails() {
                     noMinimumService && openModal(noMinimumService)
                   }
                   className="w-100 bg-green-600 text-white py-2.5 px-5 hover:bg-green-700 transition"
+                  style={{ cursor: "pointer" }}
                 >
                   No Minimum
                 </button>
@@ -143,6 +145,7 @@ function ProductDetails() {
                   key={item.id}
                   onClick={() => handleProductClick(item.id)}
                   className="block p-4 text-center transition-transform duration-200 hover:scale-105"
+                  style={{ cursor: "pointer" }}
                 >
                   <img
                     src={item.image}
@@ -204,8 +207,11 @@ function ProductDetails() {
 
             <div className="mt-6 flex justify-end gap-3">
               {/* FIXED — correct anchor */}
-              <a href="#contact-section">
-                <button className="bg-green-600 text-white py-2 px-5 hover:bg-green-700 transition">
+              <a href="/contact-form">
+                <button
+                  className="bg-green-600 text-white py-2 px-5 hover:bg-green-700 transition"
+                  style={{ cursor: "pointer" }}
+                >
                   Get a quote
                 </button>
               </a>
@@ -213,6 +219,7 @@ function ProductDetails() {
               <button
                 onClick={closeModal}
                 className="bg-black text-white py-2 px-5 hover:bg-gray-800 transition"
+                style={{ cursor: "pointer" }}
               >
                 Close
               </button>

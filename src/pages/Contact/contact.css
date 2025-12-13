@@ -1,7 +1,6 @@
 @import "tailwindcss";
 
-.main_background,
-.contact_page_section {
+.main_background {
   background-image: url("/src/assets/images/fella-bg.JPG");
   background-position: center;
   background-size: cover;

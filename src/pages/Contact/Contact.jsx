@@ -6,7 +6,17 @@ import "./contact.css";
 function CustomSelect({ value, onChange }) {
   const [open, setOpen] = useState(false);
 
-  const options = ["Package 1", "Package 2", "Package 3"];
+  const options = [
+    "Pro Club - 10 pcs Clothing Line",
+    "Pro Club - 20 pcs Clothing Line",
+    "Pro Club - No Minimum Order",
+    "Box Tee - 10 pcs Clothing Line",
+    "Box Tee - 20 pcs Clothing Line",
+    "Box Tee - No Minimum Order",
+    "Relaxed Tee - 10 pcs Clothing Line",
+    "Relaxed Tee - 20 pcs Clothing Line",
+    "Relaxed Tee - No Minimum Order",
+  ];
 
   const handleSelect = (val) => {
     onChange({ target: { name: "service", value: val } });
