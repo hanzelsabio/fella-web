@@ -33,7 +33,7 @@ function Products() {
     <section id="services" className="collection_section">
       {/* Brand Oversized Tee Collection */}
       <div className="collection_content max-w-6xl mx-auto py-30 px-8">
-        <h2 className="collection_header text-2xl font-medium mb-6 text-center uppercase">
+        <h2 className="collection_header text-xl font-medium mb-6 text-center uppercase">
           Choose A Clothing Package
         </h2>
         <div className="collection_body grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">

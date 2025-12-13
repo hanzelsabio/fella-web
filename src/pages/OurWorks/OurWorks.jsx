@@ -4,12 +4,12 @@ import "./OurWorks.css";
 
 function OurWorks() {
   const images = [
-    "/gallery/fella-stan-1.jpg",
-    "/gallery/fella-stan-2.jpg",
-    "/gallery/fella-stan-3.jpg",
-    "/gallery/fella-stan-3.jpg",
-    "/gallery/fella-stan-2.jpg",
-    "/gallery/fella-stan-1.jpg",
+    "/gallery/work-2.jpg",
+    "/gallery/work-1.jpg",
+    "/gallery/work-3.jpg",
+    "/gallery/work-5.jpg",
+    "/gallery/work-4.jpg",
+    "/gallery/work-6.jpg",
   ];
 
   const [current, setCurrent] = useState(0);

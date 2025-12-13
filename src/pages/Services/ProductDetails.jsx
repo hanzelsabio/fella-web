@@ -78,7 +78,7 @@ function ProductDetails() {
         }`}
       >
         {/* Product Details */}
-        <section className="max-w-6xl mx-auto py-20 px-8 sm:px-20">
+        <section className="max-w-6xl mx-auto py-10 md:py-20 px-8 sm:px-20">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-10 items-start">
             {/* LEFT IMAGE */}
             <div className="flex flex-col items-center">
@@ -132,7 +132,7 @@ function ProductDetails() {
 
         {/* Featured Products */}
         <section className="max-w-6xl mx-auto pb-30 px-8">
-          <h2 className="text-xl font-semibold text-gray-800 mb-6 text-center">
+          <h2 className="text-xl font-medium text-gray-800 mb-6 text-center">
             Featured Products
           </h2>
 
@@ -175,9 +175,9 @@ function ProductDetails() {
           >
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
               <img
-                src={selectedService.image}
-                alt={selectedService.title}
-                className="w-full max-w-sm mx-auto object-contain"
+                src={product.image}
+                alt={product.title}
+                className="w-full h-80 md:h-full max-w-sm mx-auto object-contain"
               />
 
               <div className="space-y-4 text-left px-2">
