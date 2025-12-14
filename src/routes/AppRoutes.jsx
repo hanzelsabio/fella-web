@@ -5,7 +5,7 @@ import Services from "../pages/Services/Services";
 import FAQ from "../components/layout/FAQ/FAQ";
 import ContactPage from "../pages/Contact/ContactPage";
 import ProductDetails from "../pages/Services/ProductDetails";
-import GetAQuote from "../pages/GetAQuote/GetAQuote";
+import ContactForm from "../pages/Contact/ContactForm";
 
 export default function AppRoutes() {
   return (
@@ -15,7 +15,7 @@ export default function AppRoutes() {
       <Route path="/services" element={<Services />} />
       <Route path="/product/:id" element={<ProductDetails />} />
       <Route path="/contact" element={<ContactPage />} />
-      <Route path="/contact-form" element={<GetAQuote />} />
+      <Route path="/contact-form" element={<ContactForm />} />
     </Routes>
   );
 }

@@ -61,6 +61,15 @@ function ProductDetails() {
     }, 300);
   };
 
+  const handleGetQuote = () => {
+    navigate("/contact-form", {
+      state: {
+        service: selectedService,
+        product: product, // optional, useful if needed
+      },
+    });
+  };
+
   // Find the correct services in your services list
   const clothingLineService = services.find((s) =>
     s.title.toLowerCase().includes("clothing")
@@ -207,14 +216,13 @@ function ProductDetails() {
 
             <div className="mt-6 flex justify-end gap-3">
               {/* FIXED — correct anchor */}
-              <a href="/contact-form">
-                <button
-                  className="bg-green-600 text-white py-2 px-5 hover:bg-green-700 transition"
-                  style={{ cursor: "pointer" }}
-                >
-                  Get a quote
-                </button>
-              </a>
+              <button
+                onClick={handleGetQuote}
+                className="bg-green-600 text-white py-2 px-5 hover:bg-green-700 transition"
+                style={{ cursor: "pointer" }}
+              >
+                Get a quote
+              </button>
 
               <button
                 onClick={closeModal}
