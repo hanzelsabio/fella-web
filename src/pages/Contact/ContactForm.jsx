@@ -168,8 +168,11 @@ function ContactForm() {
           <div className="text-center py-40">
             <h2 className="text-xl font-semibold mb-10">Inquiry Sent</h2>
             <p className="max-w-xl text-gray-600">
-              You have already submitted an inquiry during this session. Closed
-              the tab/window to create another inquiry.
+              You have already submitted an inquiry during this session. If you
+              want to send another inquiry, please{" "}
+              <span className="font-medium text-black">
+                close the current tab/window and reopen another.
+              </span>
             </p>
           </div>
         )}
