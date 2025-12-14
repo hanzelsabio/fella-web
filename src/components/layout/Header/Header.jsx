@@ -59,21 +59,26 @@ export default function Header() {
 
         {/* Right Side (Contact button - Desktop) */}
         <div className="hidden lg:flex items-center space-x-8 text-md text-black">
-          <a href="#services" className="hover:text-green-500 transition">
+          <Link to="/#services" className="hover:text-green-500 transition">
             Services
-          </a>
-          <a href="#about-us" className="hover:text-green-500 transition">
+          </Link>
+
+          <Link to="/#about-us" className="hover:text-green-500 transition">
             About Us
-          </a>
-          <a href="#our-works" className="hover:text-green-500 transition">
+          </Link>
+
+          <Link to="/#our-works" className="hover:text-green-500 transition">
             Our Work
-          </a>
-          <a href="#faqs" className="hover:text-green-500 transition">
+          </Link>
+
+          <Link to="/#faqs" className="hover:text-green-500 transition">
             FAQ
-          </a>
-          <a href="#reviews" className="hover:text-green-500 transition">
+          </Link>
+
+          <Link to="/#reviews" className="hover:text-green-500 transition">
             Reviews
-          </a>
+          </Link>
+
           <Link to="/contact" className="hover:text-green-500 transition">
             Contact Us
           </Link>
@@ -114,49 +119,49 @@ export default function Header() {
 
         <ul className="sidebar_nav_links text-lg flex flex-col space-y-4 text-gray-700 px-8">
           <li>
-            <a
-              href="#services"
+            <Link
+              to="/#services"
               onClick={() => setSidebarOpen(false)}
               className="block hover:text-green-500 transition"
             >
               Services
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="#about-us"
+            <Link
+              to="/#about-us"
               onClick={() => setSidebarOpen(false)}
               className="block hover:text-green-500 transition"
             >
               About Us
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="#our-works"
+            <Link
+              to="/#our-works"
               onClick={() => setSidebarOpen(false)}
               className="block hover:text-green-500 transition"
             >
               Our Work
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="#faqs"
+            <Link
+              to="/#faqs"
               onClick={() => setSidebarOpen(false)}
               className="block hover:text-green-500 transition"
             >
               FAQs
-            </a>
+            </Link>
           </li>
           <li>
-            <a
-              href="#reviews"
+            <Link
+              to="/#reviews"
               onClick={() => setSidebarOpen(false)}
               className="block hover:text-green-500 transition"
             >
               Reviews
-            </a>
+            </Link>
           </li>
           <li>
             <Link

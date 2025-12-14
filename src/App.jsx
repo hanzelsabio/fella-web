@@ -9,6 +9,7 @@ import Footer from "./components/layout/Footer/Footer";
 // import Services from "./pages/Services/Services";
 import BackToTop from "./components/layout/BackToTop/BackToTop";
 import ScrollToTop from "./components/helper/ScrollToTop";
+import ScrollToHash from "./components/helper/ScrollToHash";
 
 import { ProductProvider } from "./context/ProductContext";
 import AppRoutes from "./routes/AppRoutes";
@@ -18,6 +19,7 @@ import "./assets/styles/globals.css";
 function App() {
   return (
     <ProductProvider>
+      <ScrollToHash />
       <ScrollToTop />
       <Announcement />
       <Header />
