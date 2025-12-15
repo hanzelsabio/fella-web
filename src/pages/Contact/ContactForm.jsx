@@ -179,7 +179,7 @@ function ContactForm() {
       </div>
 
       {showModal && (
-        <div className="fixed inset-0 flex items-center justify-center bg-black/50 z-50 transition-opacity">
+        <div className="fixed p-5 inset-0 flex items-center justify-center bg-black/50 z-50 transition-opacity">
           <div className="bg-white p-8 md:px-20 py-20 shadow-lg max-w-lg text-center relative animate-fadeIn">
             <button
               className="absolute top-3 right-5 text-gray-500 text-xl hover:text-black"
