@@ -1,6 +1,8 @@
 import { useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
 
+import Footer from "../../components/layout/Footer/Footer";
+
 import "./contact.css";
 
 function ContactForm() {
@@ -60,11 +62,8 @@ function ContactForm() {
   }, [state]);
 
   return (
-    <section
-      id="contact-section"
-      className="contact_section text-center py-12 min-h-[50vh]"
-    >
-      <div className="max-w-2xl mx-auto px-8 py-20">
+    <section id="contact-section" className="contact_section text-center">
+      <div className="max-w-2xl mx-auto px-8 py-30">
         {!submitted ? (
           <div className="">
             <h1 className="text-2xl font-bold uppercase mb-8">
@@ -208,6 +207,8 @@ function ContactForm() {
           }
         `}
       </style>
+
+      <Footer />
     </section>
   );
 }

@@ -26,7 +26,7 @@ export default function Header() {
 
         {/* Center logo */}
         <div className="hidden lg:flex">
-          <Link to="/">
+          <Link to="/home">
             <img
               src="/fella-screen-prints-logo.png"
               className="w-40"
@@ -48,7 +48,7 @@ export default function Header() {
 
         {/* Center logo */}
         <div className="absolute lg:hidden left-1/2 -translate-x-1/2">
-          <Link to="/">
+          <Link to="/home">
             <img
               src="/fella-screen-prints-logo.png"
               className="w-40"
@@ -59,23 +59,32 @@ export default function Header() {
 
         {/* Right Side (Contact button - Desktop) */}
         <div className="hidden lg:flex items-center space-x-8 text-md text-black">
-          <Link to="/#services" className="hover:text-green-500 transition">
+          <Link
+            to="/home/#services"
+            className="hover:text-green-500 transition"
+          >
             Services
           </Link>
 
-          <Link to="/#about-us" className="hover:text-green-500 transition">
+          <Link
+            to="/home/#about-us"
+            className="hover:text-green-500 transition"
+          >
             About Us
           </Link>
 
-          <Link to="/#our-works" className="hover:text-green-500 transition">
+          <Link
+            to="/home/#our-works"
+            className="hover:text-green-500 transition"
+          >
             Our Work
           </Link>
 
-          <Link to="/#faqs" className="hover:text-green-500 transition">
+          <Link to="/home/#faqs" className="hover:text-green-500 transition">
             FAQ
           </Link>
 
-          <Link to="/#reviews" className="hover:text-green-500 transition">
+          <Link to="/home/#reviews" className="hover:text-green-500 transition">
             Reviews
           </Link>
 
@@ -120,7 +129,7 @@ export default function Header() {
         <ul className="sidebar_nav_links text-lg flex flex-col space-y-4 text-gray-700 px-8">
           <li>
             <Link
-              to="/#services"
+              to="/home/#services"
               onClick={() => setSidebarOpen(false)}
               className="block hover:text-green-500 transition"
             >
@@ -129,7 +138,7 @@ export default function Header() {
           </li>
           <li>
             <Link
-              to="/#about-us"
+              to="/home/#about-us"
               onClick={() => setSidebarOpen(false)}
               className="block hover:text-green-500 transition"
             >
@@ -138,7 +147,7 @@ export default function Header() {
           </li>
           <li>
             <Link
-              to="/#our-works"
+              to="/home/#our-works"
               onClick={() => setSidebarOpen(false)}
               className="block hover:text-green-500 transition"
             >
@@ -147,7 +156,7 @@ export default function Header() {
           </li>
           <li>
             <Link
-              to="/#faqs"
+              to="/home/#faqs"
               onClick={() => setSidebarOpen(false)}
               className="block hover:text-green-500 transition"
             >
@@ -156,7 +165,7 @@ export default function Header() {
           </li>
           <li>
             <Link
-              to="/#reviews"
+              to="/home/#reviews"
               onClick={() => setSidebarOpen(false)}
               className="block hover:text-green-500 transition"
             >

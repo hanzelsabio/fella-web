@@ -1,6 +1,7 @@
 import React from "react";
 import GoogleMap from "../../components/layout/GoogleMap/GoogleMap";
 import Socials from "../../components/layout/Socials/Socials";
+import GetStarted from "../../components/layout/Banner/GetStarted";
 
 import Reviews from "../Reviews/ReviewsSection";
 
@@ -38,6 +39,7 @@ const ContactPage = () => {
           </div>
         </div>
       </div>
+      <GetStarted />
       {/* <About /> */}
       {/* <div className="main_background">
         <FAQ />

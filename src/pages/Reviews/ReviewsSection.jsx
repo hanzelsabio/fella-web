@@ -1,6 +1,8 @@
 import React, { useState, useEffect, useRef } from "react";
 import { FaStar, FaRegStar } from "react-icons/fa";
 
+import Footer from "../../components/layout/Footer/Footer";
+
 import "./Reviews.css";
 
 function Reviews() {
@@ -48,25 +50,51 @@ function Reviews() {
   };
 
   return (
-    <section
-      id="reviews"
-      className="reviews_section bg-black text-white py-30 px-6"
-    >
-      <div className="max-w-6xl mx-auto">
-        <h1 className="text-center text-3xl font-semibold mb-10">
-          Client Reviews
-        </h1>
+    <>
+      <section
+        id="reviews"
+        className="reviews_section bg-black text-white py-30 px-6"
+      >
+        <div className="max-w-6xl mx-auto">
+          <h1 className="text-center text-3xl font-semibold mb-10">
+            Client Reviews
+          </h1>
 
-        {/* ---------- MOBILE SLIDER ---------- */}
-        <div className="md:hidden">
-          <div
-            ref={sliderRef}
-            className="flex overflow-x-auto gap-4 snap-x snap-mandatory scrollbar-hide"
-          >
-            {reviews.map((review, index) => (
+          {/* ---------- MOBILE SLIDER ---------- */}
+          <div className="md:hidden">
+            <div
+              ref={sliderRef}
+              className="flex overflow-x-auto gap-4 snap-x snap-mandatory scrollbar-hide"
+            >
+              {reviews.map((review, index) => (
+                <div
+                  key={index}
+                  className="min-w-full snap-center py-10 px-6 shadow-lg flex flex-col items-center text-center"
+                >
+                  <p className="text-sm leading-relaxed mb-4">
+                    "{review.text}"
+                  </p>
+                  <div className="flex gap-1 mb-2">
+                    {[...Array(5)].map((_, i) =>
+                      i < review.rating ? (
+                        <FaStar key={i} className="text-yellow-400" />
+                      ) : (
+                        <FaRegStar key={i} className="text-yellow-400" />
+                      )
+                    )}
+                  </div>
+                  <h3 className="text-lg font-bold">{review.name}</h3>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* ---------- DESKTOP GRID (3 cards) ---------- */}
+          <div className="hidden md:grid grid-cols-3 gap-6">
+            {reviews.slice(0, 3).map((review, index) => (
               <div
                 key={index}
-                className="min-w-full snap-center py-10 px-6 shadow-lg flex flex-col items-center text-center"
+                className="py-20 px-6 shadow-lg flex flex-col items-center text-center hover:scale-105 transition"
               >
                 <p className="text-sm leading-relaxed mb-4">"{review.text}"</p>
                 <div className="flex gap-1 mb-2">
@@ -83,30 +111,11 @@ function Reviews() {
             ))}
           </div>
         </div>
-
-        {/* ---------- DESKTOP GRID (3 cards) ---------- */}
-        <div className="hidden md:grid grid-cols-3 gap-6">
-          {reviews.slice(0, 3).map((review, index) => (
-            <div
-              key={index}
-              className="py-20 px-6 shadow-lg flex flex-col items-center text-center hover:scale-105 transition"
-            >
-              <p className="text-sm leading-relaxed mb-4">"{review.text}"</p>
-              <div className="flex gap-1 mb-2">
-                {[...Array(5)].map((_, i) =>
-                  i < review.rating ? (
-                    <FaStar key={i} className="text-yellow-400" />
-                  ) : (
-                    <FaRegStar key={i} className="text-yellow-400" />
-                  )
-                )}
-              </div>
-              <h3 className="text-lg font-bold">{review.name}</h3>
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
+      </section>
+      <section className="bg-black text-white">
+        <Footer />
+      </section>
+    </>
   );
 }
 

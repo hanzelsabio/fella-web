@@ -4,7 +4,7 @@ import "./footer.css";
 
 export default function Footer() {
   return (
-    <footer className="footer_section bg-black text-xs text-white text-center py-4">
+    <footer className="footer_section bg-transparent text-xs text-center py-4">
       {/* Center logo */}
       {/* <div className="flex justify-center py-20">
         <Link to="/">

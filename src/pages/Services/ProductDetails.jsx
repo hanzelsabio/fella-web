@@ -2,6 +2,8 @@ import React, { useState, useMemo, useEffect } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { useProducts } from "../../context/ProductContext";
 
+import Footer from "../../components/layout/Footer/Footer";
+
 function ProductDetails() {
   const { id } = useParams();
   const { products, services } = useProducts();
@@ -174,6 +176,8 @@ function ProductDetails() {
           )}
         </section>
       </div>
+
+      <Footer />
 
       {/* MODAL (now correctly outside the section) */}
       {selectedService && (
